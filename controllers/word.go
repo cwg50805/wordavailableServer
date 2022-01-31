@@ -12,10 +12,10 @@ import (
 // HeartBeat function
 // @Summary Get available words
 // @produce application/json
-// @Param length query string true "length"
-// @Param rightPos query string false "rightPos"
-// @Param wrongPos query string false "wrongPos"
-// @Param wrongAlphabet query string false "wrongAlphabet"
+// @Param length query string true "Enter the length of the word here"
+// @Param rightPos query string false "Right alphabet at right position. Enter with the format like this -> 0a1p Number stands for digit, and 0 means the first character."
+// @Param wrongPos query string false "Right alphabet at wrong position. Enter with the format like this -> 0a1p Number stands for digit, and 0 means the first character."
+// @Param wrongAlphabet query string false "Wrong alphabet. Enter with the format like this -> ap . ap means the answer doesn't contain alphabet 'a' and 'p'. "
 // @Success 200 {array} array
 // @Router /api/v1/words [get]
 func GetWords(c *gin.Context) {
