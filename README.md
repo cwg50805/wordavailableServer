@@ -17,14 +17,21 @@ A tool for [wordle](https://www.powerlanguage.co.uk/wordle/).
 
 ### For Example
 
-<img src="./data/example.png" alt="example" width="600"/>  
+<img src="./data/example1.png" alt="example" width="600"/>  
 
 - In this case, fill the parameter with the value below to get available words.  
     - length : 5 
-    - rightPos : 1o
-    - wrongPos : 0s 
-    - wrongAlphabet : whepy
+    - rightPos : 
+    - wrongPos : 0s2o3i
+    - wrongAlphabet : pl
 
+<img src="./data/example2.png" alt="example" width="600"/>  
+
+- In this case, fill the parameter with the value below to get available words.  
+    - length : 5 
+    - rightPos : 1o2i3s
+    - wrongPos : 
+    - wrongAlphabet : plne
 
 
 
