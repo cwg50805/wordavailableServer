@@ -5,6 +5,7 @@ go 1.16
 require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.1 // indirect
 	github.com/gin-gonic/gin v1.7.7
+	github.com/go-openapi/swag v0.20.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/spf13/viper v1.10.1
 	github.com/swaggo/gin-swagger v1.4.0

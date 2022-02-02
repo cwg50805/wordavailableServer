@@ -5,6 +5,7 @@ import (
 	"os"
 	"regexp"
 	"strconv"
+	"strings"
 
 	"github.com/gin-gonic/gin"
 )
@@ -52,6 +53,7 @@ func GetWords(c *gin.Context) {
 		}
 
 		if wrongAlphabet, exist := c.GetQuery("wrongAlphabet"); exist {
+			wrongAlphabet = strings.ToLower(wrongAlphabet)
 			r, _ := regexp.Compile("[^" + wrongAlphabet + "]{" + lengthString + "}")
 			if match := r.MatchString(scanner.Text()); !match {
 				continue
@@ -59,6 +61,7 @@ func GetWords(c *gin.Context) {
 		}
 
 		if wrongPos, exist := c.GetQuery("wrongPos"); exist {
+			wrongPos = strings.ToLower(wrongPos)
 			var notContain []string
 			for index := 0; index < lengthInt; index++ {
 				notContain = append(notContain, "")
@@ -94,6 +97,7 @@ func GetWords(c *gin.Context) {
 		}
 
 		if rightPos, exist := c.GetQuery("rightPos"); exist {
+			rightPos = strings.ToLower(rightPos)
 			var mustContain []string
 			for index := 0; index < lengthInt; index++ {
 				mustContain = append(mustContain, "")
